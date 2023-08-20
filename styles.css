@@ -23,6 +23,7 @@ body{
     background-color: #3F9CC8ff;
     justify-content: center;
     text-align: center;
+    box-shadow:0 1px 50px #5e5d5b;
     padding: 20px; 
     grid-template-columns: auto auto auto auto;
     grid-gap: 12%;
@@ -109,6 +110,7 @@ footer {
         padding: 20px; 
         grid-template-columns: auto auto auto auto;
         grid-gap: 5%;
+        box-shadow:0 1px 50px #5e5d5b;
         max-width: 100%;
         }
 }
@@ -123,6 +125,7 @@ footer {
         grid-gap: 1%;
         grid-template-columns: auto auto auto auto;
         max-width: 100%;
+        box-shadow:0 1px 50px #5e5d5b
         }
 }
 
@@ -136,7 +139,59 @@ footer {
         padding: 20px; 
         grid-template-columns: auto auto;
         max-width: 100%;
+        box-shadow:0 1px 50px #5e5d5b
         }
 }
 
 
+@media (max-width: 480px) {
+    .navigation{
+        display: grid;
+        background-color: #3F9CC8ff;
+        justify-content: center;
+        text-align: auto;
+        padding: auto; 
+        grid-template-columns: auto auto;
+        max-width: 100%;
+        grid-gap: 10px;
+        box-shadow:0 1px 50px #5e5d5b;
+    }
+    .navigation button{
+        display: flex;
+        color: white;
+        border-color: white;
+        width: 150px;
+        justify-content: center;
+        -webkit-border-radius:50px;
+        padding: auto;
+    }
+    .container{
+        text-align: center;
+        display: block;
+        align-items: center;
+        justify-content: center;
+        padding-left: 100px;
+    }
+
+    footer {
+        background: linear-gradient( 90deg, rgba(62, 157, 203, 1) 0%, rgba(24, 204, 221, 1) 100% );
+        display: grid;
+        justify-content: space-between;
+        align-items: center;
+        padding: 25px 50px;
+        height: auto;
+      } .footer_logo{
+        padding: 100px;
+        width: 50%;
+    } .footer_nav_links{
+        height: auto;
+        font-family: 'Bebas Neue', sans-serif;
+        color: blue;
+    } .footer_nav_links h5{
+        display: none;
+    } .footer_nav_links li{
+        display: none;
+    } .footer_nav_links img{
+        height: 45px;
+    } 
+}
